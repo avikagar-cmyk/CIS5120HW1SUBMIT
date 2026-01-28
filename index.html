@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>courses@penn</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-gray-50 min-h-screen flex items-center justify-center p-4">
+
+  <!-- iPhone Frame -->
+  <div class="w-[390px] h-[844px] bg-white rounded-[3rem] shadow-2xl border-[14px] border-gray-900 overflow-hidden flex flex-col relative">
+
+    <!-- Notch -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-40 h-7 bg-gray-900 rounded-b-3xl z-50"></div>
+
+    <!-- Status Bar -->
+    <div class="pt-14 px-6 pb-4">
+      <div class="flex justify-between text-xs font-medium">
+        <span>9:41</span>
+        <span>●●●● 100%</span>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <div class="px-6 pb-4 border-b border-gray-100">
+      <h1 class="text-2xl font-semibold text-gray-900 mb-4">courses@penn</h1>
+
+      <div class="flex gap-2">
+        <div class="flex-1 relative">
+          <i data-lucide="search" class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400"></i>
+          <input
+            type="text"
+            placeholder="Search courses..."
+            class="w-full pl-10 pr-4 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Course Cards -->
+    <div class="flex-1 overflow-y-auto px-6 py-4 space-y-4">
+
+      <!-- Course Card -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-4 shadow-sm">
+        <h3 class="font-semibold text-gray-900">CIS 1200</h3>
+        <p class="text-sm text-gray-600 mb-2">Programming Languages and Techniques I</p>
+
+        <div class="text-xs text-gray-500 space-y-1 mb-3">
+          <div>MWF 10:00 AM – 11:00 AM</div>
+          <div>Difficulty: 3.0  • Work: 3.3 • Quality: 2.6 </div>
+          <div>Fall, Spring</div>
+        </div>
+
+        <div class="flex -space-x-2">
+          <img class="w-8 h-8 rounded-full border-2 border-white" src="Assets/girl2.png" alt="Person 1">
+          <img class="w-8 h-8 rounded-full border-2 border-white" src="Assets/avik.png" alt="Person 2">
+          <img class="w-8 h-8 rounded-full border-2 border-white" src="Assets/collegeFemale.png" alt="Person 3">
+        </div>
+      </div>
+
+      <!-- Course Card -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-4 shadow-sm">
+        <h3 class="font-semibold text-gray-900">STAT 1020</h3>
+        <p class="text-sm text-gray-600 mb-2">Introductory Business Statistics</p>
+
+        <div class="text-xs text-gray-500 space-y-1 mb-3">
+          <div>TR 8:30 AM – 10:00 AM</div>
+          <div>Difficulty: 1.1  • Work: 1.6 • Quality: 3.3 </div>
+          <div>Fall</div>
+        </div>
+
+        <div class="flex -space-x-2">
+          <img class="w-8 h-8 rounded-full border-2 border-white" src="Assets/girl2.png" alt="Person 1">
+          <img class="w-8 h-8 rounded-full border-2 border-white" src="Assets/avik.png" alt="Person 2">
+        </div>
+      </div>
+
+      <!-- Course Card -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-4 shadow-sm">
+        <h3 class="font-semibold text-gray-900">REAL 2050</h3>
+        <p class="text-sm text-gray-600 mb-2">Global Real Estate: Risk, Politics and Culture</p>
+
+        <div class="text-xs text-gray-500 space-y-1 mb-3">
+          <div>MWF 12:00 PM – 1:00 PM</div>
+          <div>Difficulty: 2.4  • Work: 2.3 • Quality: 3.0</div>
+          <div>Fall</div>
+        </div>
+
+        <div class="flex -space-x-2">
+          <img class="w-8 h-8 rounded-full border-2 border-white" src="Assets/collegeFemale.png" alt="Person 3">
+          <img class="w-8 h-8 rounded-full border-2 border-white" src="Assets/man.png" alt="Person 4">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

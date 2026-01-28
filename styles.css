@@ -1,0 +1,177 @@
+/* Basic Styles for the iPhone Frame */
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif; /* Default font */
+}
+
+/* Frame for iPhone with custom border, rounded corners, and shadow */
+.iphone-frame {
+  width: 390px;
+  height: 844px;
+  background-color: white;
+  border-radius: 3rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border: 14px solid #1a202c; /* Dark border color */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Notch at the top of the screen */
+.notch {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 7px;
+  background-color: #1a202c; /* Dark grey */
+  border-radius: 3rem;
+}
+
+/* Status Bar Style */
+.status-bar {
+  padding-top: 14px;
+  padding-left: 24px;
+  padding-bottom: 4px;
+  padding-right: 24px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Header section */
+.header {
+  padding-left: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e2e8f0; /* Light border color */
+}
+
+.header h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1a202c; /* Dark text */
+  margin-bottom: 16px;
+}
+
+/* Search bar */
+.search-bar {
+  display: flex;
+  gap: 8px;
+}
+
+.search-input {
+  flex: 1;
+  position: relative;
+  padding-left: 32px;
+  padding-right: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 12px;
+  border: 1px solid #edf2f7;
+  background-color: #f8fafc;
+  font-size: 14px;
+}
+
+.search-input::placeholder {
+  color: #a0aec0;
+}
+
+/* Icon button for filters */
+.filter-button {
+  padding: 10px;
+  background-color: #f8fafc;
+  border: 1px solid #edf2f7;
+  border-radius: 12px;
+}
+
+/* Course Card styles */
+.course-card {
+  background-color: white;
+  border: 1px solid #edf2f7;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+}
+
+.course-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a202c;
+}
+
+.course-card p {
+  font-size: 14px;
+  color: #718096; /* Light gray text */
+  margin-bottom: 8px;
+}
+
+.course-card .course-info {
+  font-size: 12px;
+  color: #a0aec0; /* Light gray */
+  margin-bottom: 8px;
+}
+
+.course-card .avatars {
+  display: flex;
+  gap: -10px;
+}
+
+.course-card .avatars img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid white;
+  object-fit: cover;
+}
+
+.course-card .avatar-placeholder {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #e2e8f0; /* Placeholder gray */
+}
+
+/* For medium workload */
+.course-card .badge-medium {
+  background-color: #faf089; /* Light yellow */
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #1a202c;
+}
+
+.course-card .badge-easy {
+  background-color: #68d391; /* Light green */
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #1a202c;
+}
+
+.course-card .badge-hard {
+  background-color: #f56565; /* Light red */
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+}
+
+/* Difficulty, Work, Quality Color Coding */
+
+.reviewBlue {
+  color: #3e94e5 !important; /* Blue */
+}
+
+.reviewYellow {
+  color: #f6eb55 !important; /* Yellow */
+}
+
+.reviewGreen {
+  color: #48bb78 !important; /* Green */
+}
